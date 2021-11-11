@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <NoWarn>1701;1702; CS1591; CA1822</NoWarn>
+    <LangVersion>latest</LangVersion>
+    <Optimize>false</Optimize>
+    <Copyright>Copyright 2021</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DocumentationFile>Case.API.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.MongoDb" Version="5.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.Redis" Version="5.0.2" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="5.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.13.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--<ProjectReference Include="..\..\test\Case.API.Tests\Case.API.Tests.csproj" />-->
+    <ProjectReference Include="..\Case.Application\Case.Application.csproj" />
+    <ProjectReference Include="..\Case.Shared\Case.Shared.csproj" />
+  </ItemGroup>
+</Project>

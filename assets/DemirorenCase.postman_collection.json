@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "e9a43657-6046-4f7a-8a54-3e3997613fc9",
+		"name": "Case",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Get Posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/v1/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Son Dakika: 24 Temmuz Altın fiyatları düşüşte! Bugün Çeyrek altın, gram altın fiyatları canlı 2021 - Habertürk\",\r\n    \"description\": \"Altın fiyatları düşüşte... 24 Temmuz Cumartesi günü altın fiyatları yatırımcılar tarafından merakla takip ediliyor. Güncel piyasalarda altın fiyatları düşüşe geçerken gram altının fiyatı 499,49 liradan, çeyrek altın ise 810,09 liradan işlem görüyor. Peki, gra…\",\r\n    \"link\": \"https://www.haberturk.com/son-dakika-24-temmuz-altin-fiyatlari-dususte-bugun-ceyrek-altin-gram-altin-fiyatlari-canli-2021-3142296-ekonomi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/v1/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Bulk Posts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"title\": \"Son Dakika: 24 Temmuz Altın fiyatları düşüşte! Bugün Çeyrek altın, gram altın fiyatları canlı 2021 - Habertürk\",\r\n        \"description\": \"Altın fiyatları düşüşte... 24 Temmuz Cumartesi günü altın fiyatları yatırımcılar tarafından merakla takip ediliyor. Güncel piyasalarda altın fiyatları düşüşe geçerken gram altının fiyatı 499,49 liradan, çeyrek altın ise 810,09 liradan işlem görüyor. Peki, gra…\",\r\n        \"link\": \"https://www.haberturk.com/son-dakika-24-temmuz-altin-fiyatlari-dususte-bugun-ceyrek-altin-gram-altin-fiyatlari-canli-2021-3142296-ekonomi\"\r\n    },\r\n    {\r\n        \"title\": \"Coinbase Bu 3 Yeni Altcoin İçin Destek Ekliyor – Sırada Bu 16 Kripto Para Olabilir! - KoinFinans\",\r\n        \"description\": \"En iyi kripto para borsası olan Coinbase, bu üç yeni varlık için destek ekledi. Platformun izleme listesindeki 16 altcoin de değerlendirme aşamasında ve\",\r\n        \"link\": \"https://www.koinfinans.com/coinbase-bu-3-yeni-altcoin-icin-destek-ekliyor-sirada-bu-16-altcoin-olabilir/\"\r\n    },\r\n    {\r\n        \"title\": \"4 Bankadan Ortak Açıklama Geldi, 0.99 Faiz İle Kredi Verilecek, Şartlarda Belli Oluyor - İLAN365\",\r\n        \"description\": \"4 Bankadan Ortak Açıklama Geldi, 0.99 Faiz İle Kredi Verilecek, Şartlarda Belli Oluyor. Kredi almak isteyenler, yüksek faiz oranları sebebiyle işlem yapamıyordu. Bankalar harekete geçti. İşte detaylar\",\r\n        \"link\": \"https://www.ilan365.net/4-bankadan-ortak-aciklama-geldi-099-faiz-ile-kredi-verilecek-sartlarda-belli-oluyor\"\r\n    },\r\n    {\r\n        \"title\": \"Türkiye’de de tercih ediliyor: Dünyaca ünlü ayakkabıcı harekete geçti - Cumhuriyet\",\r\n        \"description\": \"Crocs, fikri mülkiyet haklarını ihlal ettiği gerekçesiyle yaklaşık 20 şirket aleyhine dava açtı.\",\r\n        \"link\": \"https://www.cumhuriyet.com.tr/haber/turkiyede-de-tercih-ediliyor-dunyaca-unlu-ayakkabici-harekete-gecti-1854858\"\r\n    },\r\n    {\r\n        \"title\": \"Hisse alım satımında rekor seviyeler: Çoğu yerli yatırımcı - Diken\",\r\n        \"description\": \"Hisse senedi piyasası işlem hacmi geçen yılın aynı dönemine göre 2,5 kat artarak 5,2 trilyon lira ile tarihi rekor seviyeye ulaştı.\",\r\n        \"link\": \"https://www.diken.com.tr/hisse-alim-satiminda-rekor-seviyeler-cogu-yerli-yatirimci/\"\r\n    },\r\n    {\r\n        \"title\": \"Popüler Borsa, Çok Sayıda Altcoin Projesine Erişimi Kısıtladı! - Kriptokoin.com\",\r\n        \"description\": \"Piyasadaki en büyük merkezi olmayan borsalardan biri olan Uniswap, bazı altcoin projelerine erişimi kısıtlıyor. İşte liste...\",\r\n        \"link\": \"https://kriptokoin.com/borsa-cok-sayida-altcoin-projesine-erisimi-kisitladi/\"\r\n    },\r\n    {\r\n        \"title\": \"Teknoloji devlerinin, yöneticilerini korumak için yaptıkları harcamalar - Ensonhaber\",\r\n        \"description\": \"Silikon Vadisinde bulunan dev teknoloji şirketlerinin, güvenlik için yaptıkları dev harcamalar açıklandı. Güvenliği için en çok para harcanan isim ise Mark Zuckerberg oldu.\",\r\n        \"link\": \"https://www.ensonhaber.com/teknoloji/teknoloji-devlerinin-yoneticilerini-korumak-icin-yaptiklari-harcamalar\"\r\n    },\r\n    {\r\n        \"title\": \"Covid'e karşı koruyucu giysi sattığını iddia eden Avustralya şirketine 3,7 milyon dolar para cezası - Cumhuriyet\",\r\n        \"description\": \"Avustralya merkezli spor giyim şirketi Lorna Jane geçen yıl bazı ürünlerini bakteri ve virüs bulaşmasını önleyici bir teknoloji kullanıldığı iddiasıyla satışa sunmuştu.\",\r\n        \"link\": \"https://www.cumhuriyet.com.tr/haber/covide-karsi-koruyucu-giysi-sattigini-iddia-eden-avustralya-sirketine-37-milyon-dolar-para-cezasi-1854829\"\r\n    },\r\n    {\r\n        \"title\": \"ŞOK 24 Temmuz Aktüel Kataloğu! Banyo ürünleri ve çeyizlik eşyalarda indirim fırsatı! - Haber7\",\r\n        \"description\": \"ŞOK 24 Temmuz hafta sonu aktüel kataloğunda yer alan ürünleri duyurdu. ŞOK aktüel kataloğunda bu Cumartesi günü El dikiş makinesi, dijital baskül, profesyonel saç kurutma makinası, banyoda kullanılan paspas, erkek, kadın ve çocuk bornozlarından, mutfak eşyala…\",\r\n        \"link\": \"https://www.haber7.com/guncel/haber/3122648-sok-24-temmuz-aktuel-katalogu-banyo-urunleri-ve-ceyizlik-esyalarda-indirim-firsati\"\r\n    },\r\n    {\r\n        \"title\": \"Demirören Medya'da deprem: Hem görevden alındı hem Yönetim Kurulu'ndan çıkarıldı! - Gerçek Gündem\",\r\n        \"description\": \"2019 yılında İcra Kurulu Başkanlığı görevinden alınan Mehmet Soysal, Demirören Medya Grubu'nun Yönetim Kurulu'ndan da çıkarıldı.\",\r\n        \"link\": \"https://www.gercekgundem.com/medya/288663/demiroren-medyada-deprem-hem-gorevden-alindi-hem-yonetim-kurulundan-cikarildi\"\r\n    },\r\n    {\r\n        \"title\": \"Şimdiye kadar Amazon’dan hiçbir şey almadı ama Jeff Bezos ile uzaya gitti - Sözcü\",\r\n        \"description\": \"Amazon'un kurucusu ile uzaya giden Oliver Daemen'dan Jeff Bezos dahil pek çok kişiyi şaşkınlığa uğratan bir açıklama geldi. 18 yaşındaki genç, Amazon'dan şimdiye kadar hiçbir şey almadığını söyledi.\\\\r.\",\r\n        \"link\": \"https://www.sozcu.com.tr/2021/teknoloji/simdiye-kadar-amazondan-hicbir-sey-almadi-ama-jeff-bezos-ile-uzaya-gitti-6553932/\"\r\n    },\r\n    {\r\n        \"title\": \"Mercedes, 40 milyar dolar yatırımla tamamen elektrikliye geçiyor - Ensonhaber\",\r\n        \"description\": \"Alman otomobil devi Mercedes-Benz, elektrikli otomobil üretimine 40 milyar dolar yatırım yapacağını ve 2030a kadar tamamen elektrikli bir marka haline geleceğini açıkladı.\",\r\n        \"link\": \"https://www.ensonhaber.com/otomobil/mercedes-40-milyar-dolar-yatirimla-tamamen-elektrikliye-geciyor\"\r\n    },\r\n    {\r\n        \"title\": \"Fiyatı Patlayan Axie Infinity (AXS) Nedir? Yatırım Yapılır Mı? - Kriptokoin.com\",\r\n        \"description\": \"Axie Infinity (AXS) manşetleri süsleyen altcoin projeleri arasında en yenisidir. Fiyatı sadece bir ayda neredeyse 0 arttı.\",\r\n        \"link\": \"https://kriptokoin.com/axie-infinity-axs-nedir/\"\r\n    },\r\n    {\r\n        \"title\": \"Kripto Piyasasında Kartlar Yeniden Dağıtılıyor: Bitcoin Dirençleri Bir Bir Kırıyor! › CoinTürk - CoinTürk\",\r\n        \"description\": \"Lider kripto para birimi Bitcoin (BTC) 20 Temmuz’da 30.000 doların altını görmüş ve kısa süreli bir paniğin oluşmasına sebep olmuştu. Aslında bu hamle bekleniyordu, çünkü BTC 30.000 dolar ile 35.000 dolar bandında bir alanda sıkışmıştı ve bu sıkışıklığın bozu…\",\r\n        \"link\": \"https://coin-turk.com/kripto-piyasasinda-kartlar-yeniden-dagitiliyor-bitcoin-direncleri-bir-bir-kiriyor/\"\r\n    },\r\n    {\r\n        \"title\": \"Yüksek faizden kaçınan tüketici konutta bankayı pas geçti - Memurlar\",\r\n        \"description\": \"Yüksek faizden kaçınan tüketicilerin yöneldiği peşin ve senetli satışlar, ipotekli     konut satışlarını üçe katladı. Bu yılın ilk yarısında diğer konut satışı 448     bini aşarken, ipoteklide 104 bin 168 adette kaldı.\",\r\n        \"link\": \"https://www.memurlar.net/haber/982344/yuksek-faizden-kacinan-tuketici-konutta-bankayi-pas-gecti.html\"\r\n    },\r\n    {\r\n        \"title\": \"Boğaz’da havuz günlük 1500 TL - Hürriyet\",\r\n        \"description\": \"Türkiye’de artık bayram tatili sona ermek üzere. Biz de tatilin son günlerinde, sıcak havalarda havuzlarda rahatlamak isteyenler için 5 yıldızlı otellerde havuz kullanımı için istenen ücretleri araştırdık. Fiyatlar kişi başı 175 TL’den başlıyor, 1500 TL’ye ka…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/ekonomi/bogazda-havuz-gunluk-1500-tl-41858809\"\r\n    },\r\n    {\r\n        \"title\": \"Normalleşme gıda fiyatlarını düşürür mü? - Dünya Gazetesi\",\r\n        \"description\": \"Salgın dönemindeki belirsizlik ve kuraklık birçok tarımsal emtia üreticisi ülkenin, ihracat kısıtlamasına gitmesine yol açtı. Pandemi koşulların normalleşmesi ile artacak küresel ticaret, enflasyon sepetinde ağırlığı yüksek olan gıda fiyatlarının düşmesine yo…\",\r\n        \"link\": \"https://www.dunya.com/ekonomi/normallesme-gida-fiyatlarini-dusurur-mu-haberi-628594\"\r\n    },\r\n    {\r\n        \"title\": \"1 Milyon 316 bin yolcu aranıyor - Sözcü\",\r\n        \"description\": \"Zafer Havalimanı’na bu yıl 1 milyon 316 bin 569 yolcu daha gelmezse, şirket 50 milyon Euro’luk yatırımını kasasına koyacak. 2044’e kadar toplam 208 milyon Euro kazanacak.\\\\r.\",\r\n        \"link\": \"https://www.sozcu.com.tr/2021/ekonomi/1-milyon-316-bin-yolcu-araniyor-6553679/\"\r\n    },\r\n    {\r\n        \"title\": \"Veriler Konuşuyor: Cardano (ADA) Bu Seviyelere Gidiyor! - Kriptokoin.com\",\r\n        \"description\": \"Cardano fiyat hareketine hazırlanıyor. Cardano (ADA)'nın kaderi, 1,00-1,30 dolar fiyat aralığından çıkma yeteneği ile belirlenebilir.\",\r\n        \"link\": \"https://kriptokoin.com/cardano-bu-seviyelere-gidiyor/\"\r\n    },\r\n    {\r\n        \"title\": \"Deneyimli Analist: Bu Altcoin Projeleri 100x Yapabilir! - Kriptokoin.com\",\r\n        \"description\": \"yatırımcı Raoul Pal'ın altcoin projeleri hakkındaki bakış açısı ilginç: “Sosyal tokenlerde Defi'den daha fazla potansiyel ve ilgi olacak.”\",\r\n        \"link\": \"https://kriptokoin.com/analist-bu-altcoin-projeleri-patlayabilir/\"\r\n    },\r\n    {\r\n        \"title\": \"Sibel Can'dan pandemi yorumu: Ruhumuz bedenden ayrılmış\",\r\n        \"description\": \"Uzak kaldığı sahnelere ve dinleyicilerine yeniden kavuşan Sibel Can, pandemi dönemini değerlendirdi: “O kadar hızlı yaşamışız ki, ruhumuz bedenimizden ayrılmış. Pandemi nedeniyle ruhumuz tekrar bedenimizle buluştu.”\",\r\n        \"link\": \"https://www.hurriyet.com.tr/kelebek/magazin/sibel-candan-pandemi-yorumu-ruhumuz-bedenden-ayrilmis-41858441\"\r\n    },\r\n    {\r\n        \"title\": \"Anne Hathaway: Pandemi harika bir hediye!\",\r\n        \"description\": \"16 yaşındayken Carnegie Hall’de sahnelediği oyununun üçüncü gününde “Get Real” dizisinin kadrosuna alınan ve bugün dünyanın en çok kazanan oyuncularından biri olan Anne Hathaway’in filmleri, dünya çapında 7 milyar doların üzerinde hasılat elde etti. Pandemi d…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/kelebek/magazin/anne-hathaway-pandemi-harika-bir-hediye-41858444\"\r\n    },\r\n    {\r\n        \"title\": \"1100 TL pandemi yardım parası ne zaman verilecek? E devlet 1100 TL sosyal yardım parası başvuru sonuç sorgulama ekranı\",\r\n        \"description\": \"1100 TL pandemi yardım parası sonuçları, Kurban Bayramı öncesinde gündeme geldi. Pandemi döneminde ihtiyaç sahibi vatandaşlara verilen sosyal yardım ödemeleri belirli tarihlerde hesaplara yatırıldı. Aile ve Sosyal Hizmetler Bakanı Derya Yanık, geçtiğimiz haft…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/galeri-1100-tl-pandemi-yardim-parasi-ne-zaman-verilecek-e-devlet-1100-tl-sosyal-yardim-parasi-basvuru-sonuc-sorgulama-ekrani-41853603\"\r\n    },\r\n    {\r\n        \"title\": \"Pandemi yardım ödemeleri yattı mı? E devlet 1100 TL sosyal yardım parası başvuru sonuç sorgulama ekranı\",\r\n        \"description\": \"1100 TL pandemi yardım parası sonuçları, Kurban Bayramı öncesinde gündeme geldi. Pandemi döneminde ihtiyaç sahibi vatandaşlara verilen sosyal yardım ödemeleri belirli tarihlerde hesaplara yatırıldı. Aile ve Sosyal Hizmetler Bakanı Derya Yanık, geçtiğimiz haft…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/galeri-pandemi-yardim-odemeleri-yatti-mi-e-devlet-1100-tl-sosyal-yardim-parasi-basvuru-sonuc-sorgulama-ekrani-41853603\"\r\n    },\r\n    {\r\n        \"title\": \"Pandemi gezgini Kadir, otostopla 81 ili 800 lira bütçeyle gezdi\",\r\n        \"description\": \"Kadir Gezmiş (24), pandemi sürecinde soyadından esinlenip, sırt çantasını alıp, 800 TL?lik bütçeyle, 81 ili otostop çekerek gezdi. Gittiği illerin en güzel yerlerinde çadır kurup doğayla iç içe yaşayan Kadir Gezgin, son durağı Tunceli'de de Munzur Vadisi Mill…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/video/pandemi-gezgini-kadir-otostopla-81-ili-800-lira-butceyle-gezdi-41853163\"\r\n    },\r\n    {\r\n        \"title\": \"Pandemi hafifledi... Hacı Sabancı-Nazlı Kayı çiftinin düğününü Çırağan’a alındı\",\r\n        \"description\": \"Hacı Sabancı-Nazlı Kayı çifti, pandemi koşullarının hafiflemesiyle düğün planlarını revize etti. Aile arasında yapılması planlanan düğünün yeni yeri Çırağan Sarayı, tarihi ise 3 Eylül oldu.\",\r\n        \"link\": \"https://www.hurriyet.com.tr/kelebek/magazin/pandemi-hafifledi-haci-sabanci-nazli-kayi-ciftinin-dugununu-ciragana-alindi-41841419\"\r\n    },\r\n    {\r\n        \"title\": \"Gülşen'in transparan sahne kıyafeti olay oldu!\",\r\n        \"description\": \"Pandemi yasaklarının gevşetilmesiyle birlikte ünlü isimler de sahneye çıkmaya başladı. Alaçatı'da sevenleriyle buluşan Gülşen'in sahneye kıyafeti olay oldu.\",\r\n        \"link\": \"https://www.hurriyet.com.tr/kelebek/magazin/gulsenin-transparan-sahne-kiyafeti-olay-oldu-41851249\"\r\n    },\r\n    {\r\n        \"title\": \"Dilan Telkök ile Berkay Hardal'dan rötarlı düğün\",\r\n        \"description\": \"2019 yılında nikah masasına oturan Dilan Telkök ile Berkay Hardal, pandemi nedeniyle erteledikleri düğünlerini dün akşam yaptılar.\",\r\n        \"link\": \"https://www.hurriyet.com.tr/kelebek/magazin/dilan-telkok-ile-berkay-hardaldan-rotarli-dugun-41852283\"\r\n    },\r\n    {\r\n        \"title\": \"1100 TL pandemi yardım başvuru ve sonuç sorgulama ekranı: E devlet sosyal yardım ödemelerinde son durum\",\r\n        \"description\": \"1100 TL pandemi sosyal yardım desteği başvuru ve sonuç sorgulama ekranı gündemde yer almaya devam ediyor. Koronavirüs salgını sürecinde belirli şartları taşıyan vatandaşlara verilen sosyal yardım ödemeleri belirlenen tarihler aralığında hesaplara yatırılmıştı…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/galeri-1100-tl-pandemi-yardim-basvuru-ve-sonuc-sorgulama-ekrani-e-devlet-sosyal-yardim-odemelerinde-son-durum-41849516\"\r\n    },\r\n    {\r\n        \"title\": \"Dönüşleri muhteşem oldu! Ünlü şarkıcılar sahnede...\",\r\n        \"description\": \"Pandemi nedeniyle uzun süredir sahnelerden uzak olan müzisyenler, normalleşme süreciyle birlikte dinleyicilerine yeniden kavuştu. Ünlü sanatçılar hafta sonu verdikleri konserlerde sevenleriyle özlem giderdi.\",\r\n        \"link\": \"https://www.hurriyet.com.tr/kelebek/magazin/donusleri-muhtesem-oldu-unlu-sarkicilar-sahnede-41846350\"\r\n    },\r\n    {\r\n        \"title\": \"Konser maratonu başladı... Tan Taşçı Harbiye'ye bayrak dikti, Candan Erçetin Bodrum'da, Simge Bolu'da fırtına gibi esti\",\r\n        \"description\": \"Pandemi tedbirleri kapsamında başlayan konser yasakları bitti, ünlü isimler ayrı kaldıkları sahnelere geri döndü. Tan Tançı Harbiye'de Candan Erçetin Bodrum'da, Simge Bolu'da sahne aldı.\",\r\n        \"link\": \"https://www.hurriyet.com.tr/kelebek/magazin/konser-maratonu-basladi-tan-tasci-harbiyeye-bayrak-dikti-candan-ercetin-bodrumda-simge-boluda-firtina-gibi-esti-41855698\"\r\n    },\r\n    {\r\n        \"title\": \"Konserler başladı: Ajda Pekkan, Volkan Konak, Ferhat Göçer'den müzik diyafeti\",\r\n        \"description\": \"Pandemi sebebiyle ara verilen konserler, yasakların kalkmasıyla yeniden başladı. Ajda Pekkan Belarus'ta, Volkan Konak Bodrum'da sahneye çıktı. Ferhat Göçer ise Bodrum Antik Tiyatro konseri için gün sayıyor...\",\r\n        \"link\": \"https://www.hurriyet.com.tr/kelebek/magazin/konserler-basladi-ajda-pekkan-volkan-konak-ferhat-gocerden-muzik-diyafeti-41856277\"\r\n    },\r\n    {\r\n        \"title\": \"Biraz çekingen durdu\",\r\n        \"description\": \"Dünyanın en köklü sinema buluşmalarından biri olan Cannes Film Festivali, pandemi yüzünden geçen yıl yapılamadı, bu yıl da alışıldık tarihinden farklı bir zamanda gerçekleşti. Fakat, bu aksiliklere rağmen arayı kapattı ve geride yine unutulmaz anlar bıraktı…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/kelebek/magazin/74uncu-cannes-film-festivali-boyle-veda-etti-kapanista-biraz-utangacti-41855737\"\r\n    },\r\n    {\r\n        \"title\": \"Serdar Ortaç: Kazandıkça borçlarımı ödüyorum\",\r\n        \"description\": \"ŞARKICI Serdar Ortaç, pandemi dönemini verimli geçirip birçok şarkı yaptığını ve bu yaz pek çok ismin katılımıyla da bir saygı albümü çıkaracağını söyledi. Ortaç, hedeflediği projesini de DHA'yla paylaştı.\",\r\n        \"link\": \"https://www.hurriyet.com.tr/kelebek/magazin/serdar-ortac-kazandikca-borclarimi-oduyorum-41851025\"\r\n    },\r\n    {\r\n        \"title\": \"El emeği göz nuru ürünler yeniden tezgâhta...\",\r\n        \"description\": \"Pandemi nedeniyle geçen yıl açılmayan Potlaç Moda Kadın Emeği Pazarı 25 Haziran’da yeniden kurulmaya başladı. Kasıma kadar da cuma, cumartesi ve pazar günleri Moda’da 11.00-19.30 arasında açık olacak. Tezgâhlarda el emeği çantalar, takılar, giysiler bulabilir…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/kelebek/hurriyet-pazar/el-emegi-goz-nuru-urunler-yeniden-tezgahta-41845621\"\r\n    },\r\n    {\r\n        \"title\": \"Mahkemeden kiraya pandemi zammı\",\r\n        \"description\": \"Yargıtay 3. Hukuk Dairesi, şartları oluştuğunda ihtiyati tedbir kararı verilerek, kirada pandemi indirimi yapılmasına vize verirken, Bodrum’da bir mahkemeden pandemi dönemini de kapsayacak şekilde kiraya zam kararı çıktı.\",\r\n        \"link\": \"https://www.hurriyet.com.tr/gundem/mahkemeden-kiraya-pandemi-zammi-41856142\"\r\n    },\r\n    {\r\n        \"title\": \"Pandemiden bunalan öğrenciler: Evde durmak istemiyoruz\",\r\n        \"description\": \"Okullarından uzak kalan öğrenciler, kuşkusuz pandeminin en çok zarar verdiği kesimlerden biri oldu. Bir ilkokul, bir ortaokul son sınıf, bir lise ve bir üniversite öğrencisiyle bir araya geldik ve bu sıra dışı dönemde neler yaşadıklarını konuştuk...\",\r\n        \"link\": \"https://www.hurriyet.com.tr/egitim/pandemiden-bunalan-ogrenciler-evde-durmak-istemiyoruz-41842754\"\r\n    },\r\n    {\r\n        \"title\": \"Mangal yakmak yasak mı? Detaylar belli oldu\",\r\n        \"description\": \"Mangal yakmak yasak mı ve piknik alanlarında mangal yakılır mı sorusu, pandemi dolayısıyla uzun bir süredir evlerinden çıkamayan kişilerin gündemindeki konu oldu. Piknik alanlarında mangal yakma yasağı dolayısıyla uygulanan kısıtlama, İçişleri Bakanlığı karar…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/gundem/mangal-yakmak-yasak-mi-detaylar-belli-oldu-41842292\"\r\n    },\r\n    {\r\n        \"title\": \"Nakdi ücret desteği ne zaman sona erecek?\",\r\n        \"description\": \"Nakdi ücret desteği ne zaman bitecek sorusu, bu ödemeden faydalanan kişilerin gündemindeki konular arasında yer alıyor. Pandemi dolayısıyla işlerine bir süre ara vermek durumunda kalan ya da personel sayısında kısıtlamaya giden iş yerlerine tanımlanan nakdi ü…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/ekonomi/nakdi-ucret-destegi-ne-zaman-sona-erecek-41839555\"\r\n    },\r\n    {\r\n        \"title\": \"Anne Hathaway: Çalıştığım için kendimi suçlu hissetmiyorum\",\r\n        \"description\": \"16 yaşındayken Carnegie Hall’de sahnelediği oyununun üçüncü gününde “Get Real” dizisinin kadrosuna alınan ve bugün dünyanın en çok kazanan oyuncularından biri olan Anne Hathaway’in filmleri, dünya çapında 7 milyar doların üzerinde hasılat elde etti. Pandemi d…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/kelebek/magazin/anne-hathaway-calistigim-icin-kendimi-suclu-hissetmiyorum-41858444\"\r\n    },\r\n    {\r\n        \"title\": \"Güzel oyun değil doğru oyun kazandı\",\r\n        \"description\": \"İki teknik adamın taktiksel savaşını izlediğimiz bu tarz kapışmalar için zaman zaman “satranç müsabakası” benzetmesini kullanırız ama dün Wembley’deki maç biraz daha farklıydı sanki.\",\r\n        \"link\": \"https://www.hurriyet.com.tr/sporarena/yazarlar/ugur-meleke/guzel-oyun-degil-dogru-oyun-kazandi-41848018\"\r\n    },\r\n    {\r\n        \"title\": \"Biz de oyun oynamak istiyoruz\",\r\n        \"description\": \"Önceki yazılarımda da bahsettim; kör olan da sizin gibi insan! Siz hayattan ne isterseniz biz de aynısını istiyoruz. Bilgisayar oyunu da bir ihtiyaç.\",\r\n        \"link\": \"https://www.hurriyet.com.tr/kelebek/hurriyet-pazar/biz-de-oyun-oynamak-istiyoruz-41845243\"\r\n    },\r\n    {\r\n        \"title\": \"Survivor'da yarı finalist kim oldu, 23 Haziran yarı final oyununu kim kazandı? İşte Survivor'da 2. yarı finalist olan isim\",\r\n        \"description\": \"Survivor'da yarı finalist kim oldu sorusu çarşamba akşamı belli oldu. 2021 sezonunun şampiyonunun belirlenmesine günler kala 3 yarışmacı finalist olmak için parkura çıktı. Survivor 2021'in 23 Haziran tarihli 127. bölümünde  final oyunu, heyecan dolu anlara sa…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/galeri-survivorda-yari-finalist-kim-oldu-final-oyununu-kim-kazandi-23-haziran-survivor-2-yari-finalist-belli-oldu-41838465\"\r\n    },\r\n    {\r\n        \"title\": \"On Numara sonuçları canlı çekiliş sorgulama ekranı yayınlandı - 19 Temmuz On Numara çekiliş sonuçları millipiyangoonline.com'da!\",\r\n        \"description\": \"On Numara sonuçları ve sorgulama ekranı erişime açıldı. Heyecanla beklenen haftanın ilk On Numara çekilişi bu akşam Sisal Şans tarafından noter huzurunda gerçekleşti. Büyük ikramiyesi ile gerçekleşen çekiliş sonrası On Numara sonuç sorgulama ekranı millipiyan…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/galeri-on-numara-sonuclari-canli-cekilis-sorgulama-ekrani-yayinlandi-19-temmuz-on-numara-cekilis-sonuclari-millipiyangoonline-comda-41856320\"\r\n    },\r\n    {\r\n        \"title\": \"Çılgın Sayısal Loto çekilişi bu akşam saat kaçta? Canlı yayın ile ekranlarda olacak..\",\r\n        \"description\": \"Çılgın Sayısal Loto çekilişi için geri sayım başladı.. 172 milyonu aşan ikramiye tutarı ile heyecan seviyesi katlanan Çılgın Sayısal Loto sonuçları bu akşam yapılacak çekiliş ile belirlenecek. Çekilişin hemen ardından bilet numarası ile sonuç sorgulama ekranı…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/galeri-cilgin-sayisal-loto-cekilisi-bu-aksam-saat-kacta-canli-yayin-ile-ekranlarda-olacak-41840383\"\r\n    },\r\n    {\r\n        \"title\": \"On Numara sonuçları saat kaçta açıklanacak? 5 Temmuz On Numara çekiliş sonuçları sorgulama ekranı millipiyangoonline.com'da!\",\r\n        \"description\": \"On Numara sonuçları için nefesler tutuldu. Sisal Şans tarafından düzenlenecek olan On Numara çekilişi 5 Temmuz Pazartesi günü talihlilerini aramaya devam ediyor. Şans oyunu meraklılarının ilgi gösterdiği On Numara, bu akşam noter huzurunda yapılacak çekiliş i…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/gundem/on-numara-sonuclari-saat-kacta-aciklanacak-5-temmuz-on-numara-cekilis-sonuclari-sorgulama-ekrani-millipiyangoonline-comda-41846365\"\r\n    },\r\n    {\r\n        \"title\": \"On Numara sonuçları saat kaçta açıklanacak? 9 Temmuz On Numara çekiliş sonuçları sorgulama ekranı millipiyangoonline.com'da!\",\r\n        \"description\": \"On Numara sonuçları için nefesler tutuldu. Sisal Şans tarafından düzenlenecek olan On Numara çekilişi 5 Temmuz Cuma günü talihlilerini aramaya devam ediyor. Şans oyunu meraklılarının ilgi gösterdiği On Numara, bu akşam noter huzurunda yapılacak çekiliş ile ta…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/gundem/on-numara-sonuclari-saat-kacta-aciklanacak-9-temmuz-on-numara-cekilis-sonuclari-sorgulama-ekrani-millipiyangoonline-comda-41849542\"\r\n    },\r\n    {\r\n        \"title\": \"On Numara sonuçları saat kaçta açıklanacak? 12 Temmuz On Numara çekiliş sonuçları sorgulama ekranı millipiyangoonline.com'da!\",\r\n        \"description\": \"On Numara sonuçları için nefesler tutuldu. Sisal Şans tarafından düzenlenecek olan On Numara çekilişi 12 Temmuz Pazartesi günü talihlilerini aramaya devam ediyor. Şans oyunu meraklılarının ilgi gösterdiği On Numara, bu akşam noter huzurunda yapılacak çekiliş …\",\r\n        \"link\": \"https://www.hurriyet.com.tr/gundem/on-numara-sonuclari-saat-kacta-aciklanacak-12-temmuz-on-numara-cekilis-sonuclari-sorgulama-ekrani-millipiyangoonline-comda-41851478\"\r\n    },\r\n    {\r\n        \"title\": \"Bulut tabanlı oyun pazarına adım atmak isteyen Netflix, önümüzdeki yıl platformuna oyunları ekleyebilir\",\r\n        \"description\": \"Oyun dünyasının geleceği olarak görülen bulut tabanlı oyun sistemleri her geçen gün popülerliklerini artırarak yollarına devam ediyor. Online oyun servislerinin Netflix benzeri bir model ile birlikte karşımıza çıktığını sizlere daha önce aktarmıştık. \\\\r\\\\nBugün …\",\r\n        \"link\": \"https://webrazzi.com/2021/07/16/netflix-onumuzdeki-yil-platformuna-oyunlari-ekleyebilir\"\r\n    },\r\n    {\r\n        \"title\": \"Boğaziçi Ventures, Funrika’ya 2 milyon 750 bin TL yatırım yaptı\",\r\n        \"description\": \"Geçen sene Türkiye'de oyun sektörü, 2 milyar dolarlık hacim yarattı. Dünya oyun pazarında ise 18.nci sırada tamamladı. Peak Games ve Rollic Games’in ABD’li oyun şirketi Zynga tarafından satın alınması yılın en önemli gelişmelerinden biri oldu. \\\\r\\\\nBu yüzden yer…\",\r\n        \"link\": \"https://webrazzi.com/2021/07/13/bogazici-ventures-funrika-ya-2-milyon-750-bin-tl-yatirim-yapti\"\r\n    },\r\n    {\r\n        \"title\": \"Çılgın Sayısal Loto sonuçları canlı çekiliş sorgulama: 19 Temmuz Çılgın Sayısal Loto çekiliş sonuçları millipiyangoonline'da yayınlandı!\",\r\n        \"description\": \"Çılgın Sayısal Loto sonuçları için heyecanlı bekleyiş sona erdi. Milli Piyango TV Youtube kanalından ve hurriyet.com.tr'den canlı olarak yayınlanan Çılgın Sayısal Loto çekilişi sonrası sonuçlar millipiyangoonline'da erişime açıldı. Son çekilişinde 183.824.952…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/galeri-cilgin-sayisal-loto-sonuclari-canli-cekilis-sorgulama-19-temmuz-cilgin-sayisal-loto-cekilis-sonuclari-millipiyangoonlineda-yayinlandi-41856685\"\r\n    },\r\n    {\r\n        \"title\": \"GTA 6 ne zaman çıkacak? GTA 6 sistem gereksinimleri nasıl olacak?\",\r\n        \"description\": \"Oyun tutkunlarının bir süredir odak noktasında yer alan GTA 6, ne zaman çıkacağı ile gündemde yer alıyor. Serinin son oyunu GTA 5'in çıkmasının üzerinden 8 yıl geçmesiyle birlikte beklentiler de yükselişe geçti. Peki birçok kişinin merakla araştırdığı konular…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/teknoloji/gta-6-ne-zaman-cikacak-gta-6-sistem-gereksinimleri-nasil-olacak-41847088\"\r\n    },\r\n    {\r\n        \"title\": \"Çocuğu tanımanın yolu sohbetten geçer\",\r\n        \"description\": \"“Kendinde en sevdiğin üç özellik ne”, “Annenin keşke olmasa dediğin üç huyu nedir”, “Babanı diğer babalardan ayıran şey ne”... Basit görünen bu \\\\nsorular bize çocukların düşünceleri ve duyguları hakkında fikir verir. Bunları ona oyun içinde sorarsanız samimi c…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/kelebek/hurriyet-cumartesi/cocugu-tanimanin-yolu-sohbetten-gecer-41840087\"\r\n    },\r\n    {\r\n        \"title\": \"Oyun değil gerçek vahşet!\",\r\n        \"description\": \"Son dakika dehşet haberleri... Şanlıurfa'da önceki gün yaşanan ve 6 kişinin yaralandığı kavganın görüntüleri kan dondurdu. Görüntülerde bir kişinin kavga edenleri defalarca ezmek için araçla çarpıp, ezdiği görüldü. Boşanma aşamasında olan çiftin ailelerinin s…\",\r\n        \"link\": \"https://www.haberturk.com/kan-dondurdu-oyun-degil-gercek-vahset-defalarca-ezmeye-calisti-3116677\"\r\n    },\r\n    {\r\n        \"title\": \"Çevrimiçi oyun karakterini ele geçirmek suç\",\r\n        \"description\": \"Cumhurbaşkanlığı, sosyal medyadan ‘çevrimiçi oyun dolandırıcılığı’yla ilgili hazırladığı raporu yayınlayarak, “Tehdit ve şantajla karşı karşıya kaldığınızda güvenlik güçlerine başvurun, oyun karakteriniz çalındıysa hukuki süreç başlatın” uyarısında bulundu.\",\r\n        \"link\": \"https://www.hurriyet.com.tr/gundem/cevrimici-oyun-karakterini-ele-gecirmek-suc-41851392\"\r\n    },\r\n    {\r\n        \"title\": \"Rollic'i alan Zynga şimdi de yerli oyun şirketi Forgerhero ve iştiraki ByteTyper'ı alıyor\",\r\n        \"description\": \"Zynga'nın yerli oyun şirketi Rollic'in yüzde 80 hissesini 168 milyon dolara satın aldığını daha önce detaylı bir şekilde sizlere aktarmıştık. Zynga'nın Türkiye oyun ekosistemine olan ilgisinin son hızla devam ettiğini söyleyebiliriz, zira Rekabet Kurumu'nun b…\",\r\n        \"link\": \"https://webrazzi.com/2021/07/12/rollic-i-alan-zynga-simdi-de-yerli-oyun-sirketi-forgerhero-ve-istiraki-bytetyper-i-aliyor\"\r\n    },\r\n    {\r\n        \"title\": \"Kahvehanelerde oyun yasağı ne zaman kalkacak?\",\r\n        \"description\": \"Kahvehanelerde oyun yasağı serbest mi? Merak konusu oldu. Koronavirüs tedbirleri kapsamında kahvehane, kıraathane gibi yerlerde oyun yasağı uygulanıyor. İçişleri Bakanlığı 1 Temmuz genelgesinde kahvehanelerde oyun yasağı ile ilgili alınan yeni kararı açıkladı\",\r\n        \"link\": \"https://www.haberturk.com/kahvehanelerde-oyun-yasagi-serbest-mi-kiraathanelerde-oyun-yasagi-kalkacak-mi-3118527\"\r\n    },\r\n    {\r\n        \"title\": \"Kırkpınar güreşleri ne zaman, saat kaçta hangi kanalda izlenebilecek? Program belli oldu\",\r\n        \"description\": \"Kırkpınar yağlı güreşleri için heyecan dorukta. Bu yıl 660. kez gerçekleştirilen tarihi Kırkpınar yağlı güreşleri, ağasını belirleyecek. Kırkpınar yağlı güreşleri programı canlı yayın ile takip edilebilecek. İşte, Kırkpınar yağlı güreşleri canlı yayını ne zam…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/sporarena/kirkpinar-guresleri-ne-zaman-saat-kacta-hangi-kanalda-izlenebilecek-program-belli-oldu-41849765\"\r\n    },\r\n    {\r\n        \"title\": \"Bugün sokağa çıkma yasağı var mı? 1 Temmuz sokağa çıkma yasağı kalktı mı?\",\r\n        \"description\": \"Bugün sokağa çıkma yasağı var mı sorusu, normalleşme sürecine girilmesiyle birlikte pek çok vatandaşın kafasındaki soru işareti oldu. Hafta içi saat 22.00'dan itibaren uygulanmakta olan sokağa çıkma yasağı, 1 Temmuz itibariyle gerçekleşen normalleşme süreci i…\",\r\n        \"link\": \"https://www.hurriyet.com.tr/galeri-bugun-sokaga-cikma-yasagi-var-mi-1-temmuz-sokaga-cikma-yasagi-kalkti-mi-41843686\"\r\n    },\r\n    {\r\n        \"title\": \"On Numara sonuçları açıklandı! On Numara sonuç ekranı millipiyangoonline'da\",\r\n        \"description\": \"On Numara çekilişi saat 20:00’da gerçekleştirildi. Milli Piyango TV Youtube kanalından ve hurriyet.com.tr'den canlı olarak yayınlanan On Numara çekilişinin sonuçları millipiyangoonline'da açıklandı\",\r\n        \"link\": \"https://www.hurriyet.com.tr/gundem/on-numara-sonuclari-aciklandi-on-numara-sonuc-ekrani-millipiyangoonlineda-41850082\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/v1/posts/bulk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"posts",
+								"bulk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"haber-3\",\r\n  \"description\": \"afafas\",\r\n  \"link\": \"fasfasf\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/v1/posts/60f57d202236670bf5e849e3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"posts",
+								"60f57d202236670bf5e849e3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/v1/posts/60f57d202236670bf5e849e3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"posts",
+								"60f57d202236670bf5e849e3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Post By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/v1/posts/60f57d202236670bf5e849e3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"posts",
+								"60f57d202236670bf5e849e3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sliders",
+			"item": [
+				{
+					"name": "Create Slider",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Anasayfa Manşet\",\r\n  \"slug\": \"anasayfa-manset3\",\r\n  \"posts\": [\r\n    {\r\n      \"postId\": \"60fd40723d376a263bfa56b2\",\r\n      \"order\": 1\r\n    },\r\n    {\r\n      \"postId\": \"60fd40723d376a263bfa56ab\",\r\n      \"order\": 2\r\n    },\r\n    {\r\n      \"postId\": \"60fd40723d376a263bfa56b3\",\r\n      \"order\": 3\r\n    },\r\n    {\r\n      \"postId\": \"60fd40723d376a263bfa56ad\",\r\n      \"order\": 4\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/v1/sliders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"sliders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Slider",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Anasayfa Manşet\",\r\n  \"slug\": \"anasayfa-manset4\",\r\n  \"posts\": [\r\n    {\r\n      \"postId\": \"60f5e4f5f9579fb688aee0d4\",\r\n      \"order\": 1\r\n    },\r\n    {\r\n      \"postId\": \"60f57d202236670bf5e849e3\",\r\n      \"order\": 2\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/v1/sliders/60f5e6fc0771a1500c71e7bd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"sliders",
+								"60f5e6fc0771a1500c71e7bd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Slider",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/v1/sliders/60f5e6fc0771a1500c71e7bd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"sliders",
+								"60f5e6fc0771a1500c71e7bd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Slider With Slug",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/v1/sliders/manset353/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"v1",
+								"sliders",
+								"manset353",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

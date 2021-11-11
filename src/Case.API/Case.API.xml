@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Case.API</name>
+    </assembly>
+    <members>
+        <member name="M:Case.API.Controllers.PostsController.GetAsync">
+            <summary>
+            Get posts
+            </summary>
+            <remarks>Returns posts list</remarks>
+        </member>
+        <member name="M:Case.API.Controllers.PostsController.GetAsync(System.String)">
+            <summary>
+            Find post by ID
+            </summary>
+            <param name="id">ID of Post</param>
+            <remarks>Returns a single post</remarks>
+        </member>
+        <member name="M:Case.API.Controllers.PostsController.PostAsync(Case.Core.Entities.Post)">
+            <summary>
+            Add a new post
+            </summary>
+            <param name="post">Post object that needs to be added</param>
+            <remarks></remarks>
+        </member>
+        <member name="M:Case.API.Controllers.PostsController.PostAsync(System.Collections.Generic.IEnumerable{Case.Core.Entities.Post})">
+            <summary>
+            Bulk add new posts
+            </summary>
+            <param name="posts">Post objects that needs to be added</param>
+            <remarks></remarks>
+        </member>
+        <member name="M:Case.API.Controllers.PostsController.PutAsync(System.String,Case.Core.Entities.Post)">
+            <summary>
+            Update a post
+            </summary>
+            <param name="id">Post ID that needs to be updated</param>
+            <param name="post">Post object that needs to be updated</param>
+            <remarks></remarks>
+        </member>
+        <member name="M:Case.API.Controllers.PostsController.DeleteAsync(System.String)">
+            <summary>
+            Delete a post
+            </summary>
+            <param name="id">Post ID that needs to be deleted</param>
+            <remarks></remarks>
+        </member>
+        <member name="M:Case.API.Controllers.SlidersController.GetSliderPostsAsync(System.String)">
+            <summary>
+            Get slider posts by slug
+            </summary>
+            <param name="slug">Slug of Slider</param>
+            <remarks>Returns slider posts</remarks>
+        </member>
+        <member name="M:Case.API.Controllers.SlidersController.GetAsync(System.String)">
+            <summary>
+            Find slider by ID
+            </summary>
+            <param name="id">ID of Slider</param>
+            <remarks>Returns a single slider</remarks>
+        </member>
+        <member name="M:Case.API.Controllers.SlidersController.PostAsync(Case.Application.Models.CreateSliderDto)">
+            <summary>
+            Add a new slider
+            </summary>
+            <param name="sliderDto">Slider object that needs to be added</param>
+            <remarks></remarks>
+        </member>
+        <member name="M:Case.API.Controllers.SlidersController.PutAsync(System.String,Case.Application.Models.CreateSliderDto)">
+            <summary>
+            Update a slider
+            </summary>
+            <param name="id">Slider ID that needs to be updated</param>
+            <param name="sliderDto">Slider object that needs to be updated</param>
+            <remarks></remarks>
+        </member>
+        <member name="M:Case.API.Controllers.SlidersController.DeleteAsync(System.String)">
+            <summary>
+            Delete a slider
+            </summary>
+            <param name="id">Slider ID that needs to be deleted</param>
+            <remarks></remarks>
+        </member>
+    </members>
+</doc>
