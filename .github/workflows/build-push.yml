@@ -32,6 +32,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./src
-          dockerfile: Case.API/Dockerfile
+          file: Case.API/Dockerfile
           tags: case-api-${{ steps.tagversion.outputs.tag }}
           push: true
