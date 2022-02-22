@@ -31,8 +31,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: src
-          repository: castielizm/case
+          context: ./src
           dockerfile: Case.API/Dockerfile
           tags: case-api-${{ steps.tagversion.outputs.tag }}
           push: true
