@@ -25,5 +25,5 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: castielizm/case
-          dockerfile: src/Case.API/Dockerfile
+          dockerfile: Case.API/Dockerfile
           tags: case-api-${{ steps.tagversion.outputs.tag }}
