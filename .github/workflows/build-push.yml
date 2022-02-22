@@ -33,5 +33,5 @@ jobs:
         with:
           context: ./src
           file: ./src/Case.API/Dockerfile
-          tags: case-api-${{ steps.tagversion.outputs.tag }}
+          tags: castielizm/case:case-api-${{ steps.tagversion.outputs.tag }}
           push: true
